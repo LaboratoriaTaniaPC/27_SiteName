@@ -1,0 +1,269 @@
+<!--   
+  @uthor: Tania Patiño
+   Second Excercise: 
+   Site with Boostrap
+   Version: 3.0 
+   Date: 21-08-16
+-->
+
+<!-- Structur of a simple site with Bootstrap-->
+<!DOCTYPE html>
+<html lang="en">
+<!--Start with <head>-->
+<head>
+<!--This tag is for the title-->
+<title>Site Name</title>
+<!--Describe metadata, Specify the character encoding for the HTML document
+ UTF-8 - Character encoding for Unicode -->
+<meta charset="utf-8">
+<!--This means that the browser will (probably) render the width of the page at the width of its own screen. So if that screen is   320px wide, the browser window will be 320px wide, rather than way zoomed out and showing 960px (or whatever that device does by default, in lieu of a responsive meta tag).-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--Bootstrap, bootstrap.min.css, version 3.3.7 -->  
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/main.css">
+<!--Script of JS, one with jquery and other one with bootstrap functions -->  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<!--end tag <head>-->
+<!--This is the <body> of the site-->
+<body>
+
+<!--Top Menu-->
+  <nav class='navbar navbar-default navbar-static-top nav--fixed' id='mainnav' role='navigation'>
+    <div class="container">
+       <h3>Site name</h3>
+        <ul class="nav navbar-nav navbar-right enlinea">
+          <!--Bar elements, Nosotros y Enlaces RSS-->
+          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Noticias</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-home"></span> Enlaces RSS</a></li>
+          <form class="hidden-xs hidden-sm">
+            <input type="search" name="search">
+              <button> Buscar</button>
+          </form>
+         </li>   
+        </ul>
+      </div>
+  </nav>
+<!--end nav of menu-->
+
+<!--Site tabs options: 
+    Bienvenido, Actualidad, En directo,
+    Reporte financiero, Nuestra oferta, 
+    De nosotros a usted
+-->
+<!--second menu-->
+<nav>
+  <div class="container-fluid">
+    <div class="navbar-header hidden-xs hidden-sm">
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="#">Bienvenido</a></li>
+          <li class="dropdown">
+           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Actualidades
+            <ul class="dropdown-menu">
+              <li><a href="#">algo1</a></li>
+              <li><a href="#">algo2</a></li>
+              <li><a href="#">algo3</a></li> 
+           </ul>
+         </li>
+            <li><a href="#">En directo</a></li>
+            <li><a href="#">Reporte financiero</a></li>
+            <li><a href="#">Nuestra oferta</a></li>
+            <li><a href="#">De nosotros a usted</a></li> 
+         </ul>
+      </div>
+    </div>
+</nav>
+<!--termina nav del menu de pestañas-->
+<!--column 1-->  
+
+<div class="container-fluid text-center">
+  <div class="row content">
+    <div class="col-sm-6 sidenav">
+        <h3>
+        <p><span class="label label-default">Historia Destacada</span></p></h3> 
+        <h5><span class="glyphicon glyphicon-time"></span> Artículo | publicado el 09/10/15</h5>
+        <h5><!--The <span> tag is used to group inline-elements in a document-->
+
+        <span class="label label-danger" align="left">Lorem ipsum dolor sit amet</span> 
+        <span class="label label-primary"></span></h5>
+        <p class="text-center">Cu quando voluptua conceptam quo. At possim diceret delicatissimi has. No qui luptatum eleifend, sea ut putent erroribus deterruisset. Ea officiis recteque qui. Mei quod omnes in, has no ornatus singulis recteque, his efficiantur reprehendunt at. Vis mucius discere an. Sit cu menandri delicata. Vel labitur ancillae conceptam an, et vim erant torquatos. Eos et utinam consequat assentior, per nibh adversarium at</p>
+        <span class="glyphicon glyphicon-bookmark" style="top:12px; right:210px">Ver mas...</span>
+        <span class="glyphicon glyphicon-bookmark" style="top:12px; left:27px">Etiquetas</span>
+        <hr>
+
+        <h3><p><span class="label label-default">Historia Destacada</span></p></h3>
+        <h5><span class="glyphicon glyphicon-time"></span> Artículo | publicado el 09/10/15</h5>
+        <h5><span class="label label-danger">Lorem ipsum dolor sit amet</span> <span class="label label-primary"></span></h5><br>
+        <p class="text-center">Cu quando voluptua conceptam quo. At possim diceret delicatissimi has. No qui luptatum eleifend, sea ut putent   erroribus deterruisset. Ea officiis recteque qui. Mei quod omnes in, has no ornatus singulis recteque, his efficiantur reprehendunt at. Vis mucius discere an. Sit cu menandri delicata. Vel labitur ancillae conceptam an, et vim erant torquatos. Eos et utinam consequat assentior, per nibh adversarium at</p>
+        
+        <span class="glyphicon glyphicon-bookmark" style="top:12px; right:210px">Ver mas...</span>
+        <span class="glyphicon glyphicon-bookmark" style="top:12px; left:27px">Etiquetas</span>
+        <hr>
+
+        <h3><p><span class="label label-default">Historia Destacada</span></p></h3>
+        <h5><span class="glyphicon glyphicon-time"></span> Artículo | publicado el 09/10/15</h5>
+        <h5><span class="label label-danger">Lorem ipsum dolor sit amet</span> <span class="label label-primary"></span></h5><br>
+        <img src="imagen/fotos.jpg" width="100%" height="250%">
+        <p class="text-center">Cu quando voluptua conceptam quo. At possim diceret delicatissimi has. No qui luptatum eleifend, sea ut putent  erroribus deterruisset. Ea officiis recteque qui.Cu quando voluptua conceptam quo. At possim diceret delicatissimi has. No qui luptatum eleifend, sea ut putent  erroribus deterruisset. Ea officiis recteque qui.Cu quando voluptua conceptam quo. At possim diceret delicatissimi has. No qui luptatum eleifend, sea ut putent  erroribus deterruisset. Ea officiis recteque qui.</p>
+
+        <span class="glyphicon glyphicon-bookmark" style="top:12px; right:210px">Ver mas...</span>
+        <span class="glyphicon glyphicon-bookmark" style="top:12px; left:27px"> Etiquetas</span>
+        <hr>
+
+        <h3><p><span class="label label-default">Historia Destacada</span></p></h3>
+        <h5><span class="glyphicon glyphicon-time"></span> Artículo | publicado el 09/10/15</h5>
+        <h5><span class="label label-danger">Lorem ipsum dolor sit amet</span> <span class="label label-primary"></span></h5><br>
+        <p class="text-center">Cu quando voluptua conceptam quo. At possim diceret delicatissimi has. No qui luptatum eleifend, sea ut putent  erroribus deterruisset. Ea officiis recteque qui. Mei quod omnes in, has no ornatus singulis recteque, his efficiantur reprehendunt at. Vis mucius discere an. Sit cu menandri delicata. Vel labitur ancillae conceptam an, et vim erant torquatos. Eos et utinam consequat assentior, per nibh adversarium at</p>
+        
+        <span class="glyphicon glyphicon-bookmark" style="top:12px; right:210px">Ver mas...</span>
+        <span class="glyphicon glyphicon-bookmark" style="top:12px; left:27px">Etiquetas</span>
+        <hr>
+    </div>
+
+    <!--column 2-->
+    <div class="col-sm-4 text-left">
+      <span class="caja"><p><h3><strong>Historia Destacada</strong></h3></p>
+        <video width="350" height="300" controls="true">
+          <iframe width="350" height="300" src="https://www.youtube.com/watch?v=FGBhQbmPwH8" frameborder="0"></iframe>
+        </video>
+        <h3><strong>Claire Dupont</strong></h3>
+        <p style="position:relative; top:12px;
+            right:-2px;" class="text-center">Cu quando voluptua conceptam quo. At possim diceret delicatissimi has. No qui luptatum eleifend, sea ut putent erroribus deterruisset. Ea officiis recteque qui. Mei quod omnes in, has no ornatus singulis recteque, his efficiantur reprehendunt at. Vis mucius discere an. Sit cu menandri delicata. Vel labitur ancillae conceptam an, et vim erant torquatos. Eos et utinam consequat assentior, per nibh adversarium at.</p>
+        <span class="glyphicon glyphicon-bookmark" style="top:12px; left:280px">Ver mas...</span>
+        <hr>
+        <h3><p><span class="label label-default">Agenda</span></p></h3>
+        <p>
+        <span class="label label-default">23 de Enero</span>
+          Vis mucius discere an. Sit cu menandri delicata</p>
+        <p>
+        <span class="label label-default">23 de Enero</span>
+          Vis mucius discere an. Sit cu menandri delicata</p>
+        <p>
+        <span class="label label-default">23 de Enero</span>
+          Vis mucius discere an. Sit cu menandri delicata</p>
+        <p>
+        <span class="label label-default">23 de Enero</span>
+           Vis mucius discere an. Sit cu menandri delicata</p>
+        <hr>
+        <h3><p><span class="label label-default">Más información </span></p></h3>
+        <h5><span class="label label-danger">Localidades <span class="label label-primary"></span>
+        </h5>
+        <p>Cu quando voluptua conceptam quo. At possim diceret delicatissimi has. No qui luptatum eleifend, sea ut putent  erroribus deterruisset. Ea officiis recteque qui. Mei quod omnes in, has no ornatus singulis recteque, his efficiantur reprehendunt at. Vis mucius discere an. Sit cu menandri delicata. Vel labitur ancillae conceptam an, et vim erant torquatos. Eos et utinam consequat assentior, per nibh adversarium at</p>
+        <h5>
+        <span class="label label-danger">Hospimedia<span class="label label-primary"></span></h5>
+        <p>Cu quando voluptua conceptam quo. At possim diceret delicatissimi has. No qui luptatum eleifend, sea ut putent  erroribus deterruisset. Ea officiis recteque qui. Mei quod omnes in, has no ornatus singulis recteque, his efficiantur reprehendunt at. Vis mucius discere an. Sit cu menandri delicata. Vel labitur ancillae conceptam an, et vim erant torquatos. Eos et utinam consequat assentior, per nibh adversarium at</p>
+      </div>
+   </span>
+  <!--Column 3-->
+  <div class="col-sm-2 sidenav">
+  <!--The .well class adds a rounded border around an element with a gray background color and some padding-->
+    <div class="well">
+      <span class="caja hidden-sm-up"><p>Más información</p>
+        <ul class="list-group">
+            <li class="list-group-item"><span class="glyphicon glyphicon-bookmark"></span>Actualidades</li>
+            <li class="list-group-item"><span class="glyphicon glyphicon-bookmark"></span>En directo
+            </li>
+            <li class="list-group-item"><span class="glyphicon glyphicon-bookmark"></span>Reporte financiero</li>
+            <li class="list-group-item"><span class="glyphicon glyphicon-bookmark"></span>Nuestra oferta</li>
+            <li class="list-group-item"><span class="glyphicon glyphicon-bookmark"></span>De nosotros a ustedes</li>
+          </ul>
+      </span>
+    </div>
+  <!--The .well class adds a rounded border around an element with a gray background color and some padding-->
+    <div class="well">
+      <span class="caja"><p>MAGAZINE</p>
+        <h3><p>ACCIONES COMUNES</p></h3>
+            <p align="left">Cu quando voluptua conceptam quo. At possim diceret delicatissimi has. No qui luptatum eleifend, sea ut putent erroribus deterruisset. Ea officiis recteque qui. Mei quod omnes in, has no ornatus singulis recteque, his efficiantur reprehendunt at. Vis mucius discere an. Sit cu menandri delicata.</p>
+      </span>
+    </div>
+ <!--The .well class adds a rounded border around an element with a gray background color and some padding-->
+    <div class="well">
+      <span class="caja"><p>MAGAZINE</p>
+        <h3><p>ACCIONES COMUNES</p></h3>
+          <p align="left">Cu quando voluptua conceptam quo. At possim diceret delicatissimi has. No qui luptatum eleifend, sea ut putent erroribus deterruisset. Ea officiis recteque qui. Mei quod omnes in, has no ornatus singulis recteque, his efficiantur reprehendunt at. Vis mucius discere an. Sit cu menandri delicata.</p>
+      </span>
+    </div>
+<!--The .well class adds a rounded border around an element with a gray background color and some padding-->
+      <div class="well">
+        <span class="caja">
+          <p align="left">Nueva generacion en Internet</p>
+        </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Footer-->
+<footer>
+    <div class="container footerWrap">
+      <div class="row">
+        <div class="col-xs-3">
+          <h4>Rubros</h4>
+            <!--If you want to create a horizontal menu using ordered or unordered list you
+                need to place all list items in a single line i.e. side by side with "list-line"-->
+            <ul class="list-inline">
+              <p><span class="glyphicon glyphicon-bookmark"></span>Actualidades</p>
+              <p><span class="glyphicon glyphicon-bookmark"></span>En directo</p>
+              <p><span class="glyphicon glyphicon-bookmark"></span>Reporte financiero</p>
+              <p><span class="glyphicon glyphicon-bookmark"></span>Nuestra oferta</p>
+              <p><span class="glyphicon glyphicon-bookmark"></span>De nosotros a ustedes</p>
+            </ul>
+        </div>
+        <div class="col-xs-2">
+          <h4>Expertise</h4>
+            <!--If you want to create a horizontal menu using ordered or unordered list you
+                need to place all list items in a single line i.e. side by side with "list-line"-->
+            <ul class="list-inline">
+              <p><span class="glyphicon glyphicon-bookmark"></span>Actualidades</p>
+              <p><span class="glyphicon glyphicon-bookmark"></span>En directo</p>
+              <p><span class="glyphicon glyphicon-bookmark"></span>Reporte financiero</p>
+              <p><span class="glyphicon glyphicon-bookmark"></span>Nuestra oferta</p>
+              <p><span class="glyphicon glyphicon-bookmark"></span>De nosotros a ustedes</p>
+            </ul>
+        </div>
+        <div class="col-xs-2">
+          <h4>Suscripción</h4>
+          <ul class="list-inline">
+            <p><span class="glyphicon glyphicon-bookmark"></span>Todo el flujo</p>
+            <p><span class="glyphicon glyphicon-bookmark"></span>Flujo RSS para expertos</p>
+            <p><span class="glyphicon glyphicon-bookmark"></span>Noticias</p>
+          </ul>
+        </div>
+        <div class="col-xs-3">
+          <h4>Nosotros</h4>
+          <ul class="list-inline">
+            <p><span class="glyphicon glyphicon-bookmark"></span>¿Quienes somos?</p>
+            <p><span class="glyphicon glyphicon-bookmark"></span>Plan del sitio</p>
+            <p><span class="glyphicon glyphicon-bookmark"></span>Información legal</p>
+          </ul>
+        </div>
+
+        <div class="col-xs-2">
+          <h4>Contacto</h4>
+          <ul class="list-inline">
+            <p><span class="glyphicon glyphicon-bookmark"></span>Contactanos</p>
+            <p><span class="glyphicon glyphicon-bookmark"></span>FAQ</p>
+            <p><span class="glyphicon glyphicon-bookmark"></span>Haga sus preguntas</p>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <br>
+    <!--SubFooter-->
+    <div class="subFooter">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="pull-center">
+            <p align="center">&copy; Ejercicio Bootstrap Laboratoria Mexico, 2016.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+

@@ -1,0 +1,116 @@
+/*
+  @uthor: Tania Patiño
+   Second Excercise: 
+   Site with Boostrap
+   Version: 3.0 
+   Date: 21-08-16
+*/
+
+#submenu01 ul {
+
+  float: right;
+  margin: 0 15px 0 0
+}
+
+/*fondo de color gris*/
+.fondo{
+  color: #c0c0c0;
+}
+
+
+/*navbar con default margin-bottom y rounded borders */
+.navbar {
+  
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+/* Se pone el height de la grid  .sidenav esta al 100% (ajustandose a como se requiera)*/    
+.row.content {
+
+  height: 450px;
+
+}
+
+/* Color de fondo y con height: 100%*/
+.sidenav {
+      
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+ }
+
+.sube {
+        margin: 5px;
+        padding: 5px;
+ }
+
+
+ .caja{
+      
+      padding-left: 5px;
+ }
+
+
+/*hidden*/
+
+.show {
+  
+    display: block !important;
+}
+
+.hide {
+  
+    display: none !important;
+
+}
+
+.hidden-xs-down;
+
+.elemento {
+ 
+  .show();
+
+}
+
+.otro-elemento {
+  .hide();
+}
+
+
+
+/* una media queries por si las flies*/
+/* no es necesario por que se tiene Bootstrap */
+       
+/* tamano de las pantallas */
+/* 
+@media screen and (max-width: 1200px) {
+    .sidenav {
+          height: auto;
+          padding: 15px;
+      }
+   .row.content {height:auto;}
+ }*/
+
+/* tamano de las pantallas */
+ /*
+ @media screen and (max-width: 768px) {
+    .sidenav {
+         height: auto;
+         padding: 15px;
+     }
+    .row.content {height:auto;}
+ }*/
+
+ /* tamano de las pantallas */
+ /*
+ @media screen and (max-width: 600px) {
+    .sidenav {
+        height: auto;
+        padding: 15px;
+     }
+     .row.content {height:auto;}
+ }*/
+
+
+	
